@@ -9,6 +9,8 @@ class Dish
 
 public: 
 	Dish();
+	void displayDish();
+	void elapsedTime();
 
 };
 

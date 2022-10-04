@@ -3,15 +3,15 @@
 class Bacillus :
     public Bacteria
 {
+    bool isAlive = true;
+
 public:
     Bacillus() {
-        Bacteria::distance = 1;
+        Bacteria::distance = 3;
         Bacteria::sign = 'B';
    };
 
-virtual bool getIsAlive() override;
-virtual void setIsAlive() override {};
-virtual bool checkNearby() override { return true; };
+virtual bool checkNearby(const Dish& dish);
 
 virtual Bacteria* split() {
     return nullptr;

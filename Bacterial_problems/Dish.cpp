@@ -38,6 +38,10 @@ Dish::Dish()
 		}
 	}
 
+}
+
+void Dish::displayDish()
+{
 	for (int i = 0; i < 50; i++) {
 		for (int j = 0; j < 50; j++) {
 			if (container[i][j] == nullptr) {
@@ -48,5 +52,33 @@ Dish::Dish()
 			}
 		}
 		std::cout << std::endl;
+	}
+}
+
+void Dish::elapsedTime()
+{
+	for (auto row : container) {
+		for (auto item : row) {
+			if (item == nullptr) {
+				continue;
+			}
+			else {
+				if (item->checkNearby() == false) {
+					item -> setLifeStatus(false);	
+ 				}
+			}
+		}
+	}
+	for (auto& row : container) {
+		for (auto& item : row) {
+			if (item == nullptr) {
+				continue;
+			}
+			else {
+				if (item-> getLifeStatus() == false) {
+					item = nullptr;
+				}
+			}
+		}
 	}
 }

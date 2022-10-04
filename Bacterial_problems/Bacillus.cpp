@@ -1,6 +1,7 @@
 #include "Bacillus.h"
 
-bool Bacillus::getIsAlive()
-{
-    return isAlive;
-}
+
+bool Bacillus:: checkNearby(const Dish& dish) {
+
+
+ }

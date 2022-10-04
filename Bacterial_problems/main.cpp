@@ -8,5 +8,9 @@
 int main() {
 	
 	Dish dish;
+	dish.displayDish();
+	std::cout << "\n\n"; 
+	dish.elapsedTime();
+	dish.displayDish();
 	return 0;
 }

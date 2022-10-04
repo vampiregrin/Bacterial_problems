@@ -3,6 +3,9 @@
 class Spirillum :
     public Bacteria
 {
+
+    bool isAlive = true;
+
 public:
     Spirillum() {
         Bacteria :: distance = 2;
@@ -13,8 +16,7 @@ public:
     //    //: Bacteria(x, y) {  
     ////}
 
-virtual bool getIsAlive() override;
-virtual void setIsAlive() override {};
+
 virtual bool checkNearby() override { return true; };
 
 virtual Bacteria* split() {

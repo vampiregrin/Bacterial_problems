@@ -3,6 +3,7 @@
 class Coccus :
     public Bacteria
 {
+    bool isAlive = true;
 
 public: 
     Coccus() {
@@ -13,8 +14,7 @@ public:
      //   : Bacteria(x, y) {
     //}*/
 
-virtual bool getIsAlive() override;
-virtual void setIsAlive() override {};
+
 virtual bool checkNearby() override { return true; };
 
 virtual Bacteria* split() {return nullptr;}

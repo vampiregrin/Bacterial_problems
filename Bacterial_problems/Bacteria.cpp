@@ -1,11 +1,10 @@
 #include "Bacteria.h"
 
-bool Bacteria::getIsAlive()
-{
-    return isAlive;
+
+void Bacteria::setLifeStatus(bool life) {
+	isAlive = life; 
 }
 
-void Bacteria::setIsAlive()
-{
-    bool alive = isAlive;
+bool Bacteria::getLifeStatus() {
+	return isAlive;
 }
